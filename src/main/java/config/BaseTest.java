@@ -29,10 +29,12 @@ public class BaseTest {
         // https://www.stats.govt.nz/large-datasets/csv-files-for-download/ - URL TO DOWNLOAD FILE
 //    https://ps.uci.edu/~franklin/doc/file_upload.html - URL TO UPLOAD FILE
         //https://checkcps.com/double-click/ - URL TO DOUBLE CLICK
+       // https://mousetester.com/- URL TO DOUBLE CLICK
 //    "https://faculty.washington.edu/chudler/java/boxes.html" - URL WITH CHECKBOXES
 //        https://www.youtube.com/ - CONTROL CHECK
 //        "https://owu.com.ua/"
-        Selenide.open("https://www.saucedemo.com/v1/");
+      //https://www.saucedemo.com/
+        Selenide.open( "https://owu.com.ua/");
     }
 
 //    @AfterMethod(alwaysRun = true)
