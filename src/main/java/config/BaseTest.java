@@ -26,26 +26,32 @@ public class BaseTest {
 
     @BeforeMethod
     public void setUp() {
-        Selenide.open("https://www.google.com/");
+        // https://www.stats.govt.nz/large-datasets/csv-files-for-download/ - URL TO DOWNLOAD FILE
+//    https://ps.uci.edu/~franklin/doc/file_upload.html - URL TO UPLOAD FILE
+        //https://checkcps.com/double-click/ - URL TO DOUBLE CLICK
+//    "https://faculty.washington.edu/chudler/java/boxes.html" - URL WITH CHECKBOXES
+//        https://www.youtube.com/ - CONTROL CHECK
+//        "https://owu.com.ua/"
+        Selenide.open("https://www.saucedemo.com/v1/");
     }
 
-    @AfterMethod(alwaysRun = true)
-    public void cleanWebDriver() {
-        Selenide.clearBrowserCookies();
-        Selenide.refresh();
-        Selenide.open("about:blank");
-    }
+//    @AfterMethod(alwaysRun = true)
+//    public void cleanWebDriver() {
+//        Selenide.clearBrowserCookies();
+//        Selenide.refresh();
+//        Selenide.open("about:blank");
+//    }
 
-    @AfterClass
-    public void tearDown() {
-        Selenide.closeWebDriver();
-    }
-
-    @AfterSuite
-    public void tearDownSuite() {
-        ChromeDriver driver = new ChromeDriver();
-        driver.quit();//закриває хромдрайвер після відпрацювання
-    }
+//    @AfterClass
+//    public void tearDown() {
+//        Selenide.closeWebDriver();
+//    }
+//
+//    @AfterSuite
+//    public void tearDownSuite() {
+//        ChromeDriver driver = new ChromeDriver();
+//        driver.quit();//закриває хромдрайвер після відпрацювання
+//    }
 
 }
 
