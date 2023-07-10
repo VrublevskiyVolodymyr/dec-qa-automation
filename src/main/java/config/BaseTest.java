@@ -34,7 +34,7 @@ public class BaseTest {
 //        https://www.youtube.com/ - CONTROL CHECK
 //        "https://owu.com.ua/"
       //https://www.saucedemo.com/
-        Selenide.open( "https://owu.com.ua/");
+        Selenide.open( "https://www.saucedemo.com/");
     }
 
 //    @AfterMethod(alwaysRun = true)
